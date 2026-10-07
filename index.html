@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Water Gun</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🐍 Snake Water Gun 🔫</h1>
+
+        <p class="subtitle">Choose your move and beat the computer!</p>
+
+        <!-- Score -->
+        <div class="score-board">
+
+            <div class="score">
+                <h3>You</h3>
+                <p id="player-score">0</p>
+            </div>
+
+            <div class="score">
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+
+        </div>
+
+        <!-- Result -->
+        <div class="result">
+            <h2 id="result-text">Make your move!</h2>
+            <p id="moves">You vs Computer</p>
+        </div>
+
+        <!-- Choices -->
+        <div class="choices">
+
+            <button class="choice-btn" id="snake">
+                🐍
+                <span>Snake</span>
+            </button>
+
+            <button class="choice-btn" id="water">
+                💧
+                <span>Water</span>
+            </button>
+
+            <button class="choice-btn" id="gun">
+                🔫
+                <span>Gun</span>
+            </button>
+
+        </div>
+
+        <!-- Reset -->
+        <button id="reset-btn">Reset Game</button>
+
+        <div class="rules">
+            <h3>Rules</h3>
+            <p>🐍 Snake beats 💧 Water</p>
+            <p>💧 Water beats 🔫 Gun</p>
+            <p>🔫 Gun beats 🐍 Snake</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
